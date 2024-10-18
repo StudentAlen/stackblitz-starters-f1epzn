@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex flex-col flex-warp min-h-screen">
+  <body class="flex flex-col flex-warp min-h-screen dark:bg-gray-800">
     <!-- Navigation bar/header -->
-    <div class="flex flex-row navbar bg-blue-300">
+    <div class="flex flex-row navbar bg-blue-300 dark:bg-blue-700">
       <div class="navbar-start">
         <!-- For small screen -->
         <div class="dropdown">
@@ -31,7 +31,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-blue-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-sm dropdown-content bg-blue-200 dark:bg-blue-700 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a>Home</a></li>
             <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a>Products</a></li>
             <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a>Blogs</a></li>
@@ -51,8 +51,9 @@
       </div>
       <!-- Another filler for the gap -->
       <div class="navbar-end">
+        
         <!-- The cart -->
-        <!-- <div class="dropdown dropdown-end">
+        <div class="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <div class="indicator">
               <svg
@@ -81,7 +82,7 @@
               </div>
             </div>
           </div>
-        </div> --> 
+        </div> 
         
         <!-- Profile Picture -->
         <div class="dropdown dropdown-end">
@@ -94,7 +95,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-blue-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-sm dropdown-content bg-blue-200 dark:bg-blue-700 z-[1] mt-3 w-52 p-2 shadow">
             <li>
               <a class="justify-between">
                 Profile
@@ -111,19 +112,19 @@
     <div class="container md:pt-12 mx-auto flex flex-wrap flex-col md:flex-row">
       <!--Left Col-->
       <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-        <h1 class="my-4 text-3xl md:text-5xl text-gray-900 font-bold leading-tight text-center md:text-left">
+        <h1 class="my-4 text-3xl md:text-5xl text-gray-900 dark:text-gray-300 font-bold leading-tight text-center md:text-left">
           Main
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 dark:from-purple-700 via-pink-500 dark:via-pink-700 to-purple-500 dark:to-red-700">
             Hero Message
           </span>
           to sell yourself!
         </h1>
-        <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+        <p class="leading-normal text-gray-300 md:text-2xl mb-8 text-center md:text-left">
           Sub-hero message, not too long and not too short. Make it just right!
         </p>
 
         <div class="flex flex-col justify-center items-center md:w-full"> 
-        <form class="bg-gradient-to-r from-purple-400 to-blue-400 shadow-lg w-5/6 md:w-full px-8 pt-6 pb-8 mb-4">
+        <form class="bg-gradient-to-r from-purple-400 dark:from-purple-700 to-blue-400 dark:to-blue-600 shadow-lg w-5/6 md:w-full px-8 pt-6 pb-8 mb-4">
           <div class="mb-4">
             <label class="block text-white py-2 font-bold mb-2" for="emailaddress">
               Signup for our newsletter
@@ -138,7 +139,7 @@
 
           <div class="flex items-center justify-between pt-4">
             <button
-              class="bg-gradient-to-r from-purple-800 to-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+              class="bg-gradient-to-r from-purple-800 dark:from-red-700 to-blue-500 dark:to-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
               type="button"
             >
               Sign Up
@@ -155,8 +156,7 @@
       </div>
 
     <!-- Footer -->
-    <footer class="static bottom-0 mt-auto">
-      <hr>
+    <footer class="sticky bottom-0 mt-auto">
       <p class="text-center"> This website created with <a href="https://tailwindcss.com/" class="text-purple-700 hover:underline">TailwindCSS</a> & <a href="https://daisyui.com/" class="text-purple-700 hover:underline">DaisyUI</a></p>
     </footer>
   </body>
