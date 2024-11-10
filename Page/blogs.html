@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-<body class="dark:bg-gray-800"> 
+<body class="flex flex-col flex-warp min-h-screen dark:bg-gray-800"> 
 <div class="flex-grow mx-auto px-8 py-10 lg:py-20">
       <section>
         <div class="flex flex-col justify-center items-center mx-auto">
@@ -36,25 +36,44 @@
 </div>
         
 <!-- Blogs -->
-<div class="container flex flex-col min-h-screen m-8 gap-36">
+<main>
+<div class="container flex flex-col min-h-screen px-4 md:m-8 gap-40 md:gap-36">
   <!-- Blog 1 -->
+<div class="card image-full w-full h-12 shadow-xl">
+  <figure>
+    <img
+      src="/img/Brand New Opening.jpg"
+      alt="Food" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Brand New Opening Nomon!</h2>
+    <p>Selamat datang di Nomon!</p>
+    <div class="card-actions justify-end">
+    <a href="/Page/isiblog/Nomon.html">
+      <button class="btn btn-primary">Check it Out!</button>
+    </a>
+    </div>
+  </div>
+</div>
+  <!-- Blog 2 -->
 <div class="card image-full w-full h-12 shadow-xl">
     <figure>
       <img
-        src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2022/06/09/M7skDyR/5-menu-makanan-chinese-food-yang-terkenal-enak-di-indonesia72.jpg"
+        src="/img/Cappucino Sakura.png"
         alt="Food" />
     </figure>
     <div class="card-body">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <h2 class="card-title">French un café allongé</h2>
+      <p>Kopi Authenthic dengan ukiran bunga sakura diatasnya</p>
       <div class="card-actions justify-end">
       <a href="/Page/isiblog/product baru.html">
-        <button class="btn btn-primary">Buy Now</button>
+        <button class="btn btn-primary">Check it Out!</button>
       </a>
       </div>
     </div>
 </div>
 </div>
+</main>
 
     <!-- Footer -->
     <footer class="px-3 pt-4 lg:px-9 bg-gray-600 dark:bg-gray-50">
