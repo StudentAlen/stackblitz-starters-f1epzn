@@ -9,124 +9,53 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex flex-col flex-warp min-h-screen">
-    <!-- Navigation bar/header -->
-    <div class="flex flex-row navbar bg-blue-300">
-      <div class="navbar-start">
-        <!-- For small screen -->
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost transition ease-in-out hover:scale-110 delay-75 duration-200 md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-blue-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a>Home</a></li>
-            <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a>Products</a></li>
-            <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/blogs.html">Blogs</a></li>
-            <li class="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a>About us</a></li>
-          </ul>
+
+  <body class="dark:bg-gray-800">
+    <div>
+      <section>
+        <div class="flex flex-col justify-center items-center mx-auto">
+          <a href="../index.html">
+            <img class="max-w-full h-auto" src="../img/Nomon Logo.png" alt="Nomon Logo">
+          </a>
         </div>
-        <a class="text-xl md:mx-8" href="index.html">Filler</a>
-      </div>
+      </section>
+    </div>
+        <!-- container -->
+<div class="navbar flex justify-center items-center">
+  <!-- card -->
+  <div class="shadow-teal-300 shadow-md max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg dark:bg-gray-700 dark:text-gray-300">
       <!-- For large screen -->
-      <div class="navbar-center hidden md:flex">
+      <div class="navbar-center flex">
         <ul class="menu menu-horizontal px-1">
-          <li class="transition ease-in-out hover:scale-110 duration-300"><a>Home</a></li>
-          <li class="transition ease-in-out hover:scale-110 duration-300"><a>Products</a></li>
-          <li class="transition ease-in-out hover:scale-110 duration-300"><a href="/Page/blogs.html">Blogs</a></li>
-          <li class="transition ease-in-out hover:scale-110 duration-300"><a>About us</a></li>
+          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/index.html">Home</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/Blogs.html">Blogs</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/About us.html">About us</a></li>
+            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/Product.html">Product</a></li>
         </ul>
       </div>
-      <!-- Another filler for the gap -->
-      <div class="navbar-end">
-        <!-- The cart -->
-        <!-- <div class="dropdown dropdown-end">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <span class="badge badge-sm indicator-item">8</span>
-            </div>
-          </div>
-          <div
-            tabindex="0"
-            class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-            <div class="card-body">
-              <span class="text-lg font-bold">8 Items</span>
-              <span class="text-info">Subtotal: $999</span>
-              <div class="card-actions">
-                <button class="btn btn-primary btn-block">View cart</button>
-              </div>
-            </div>
-          </div>
-        </div> --> 
-        
-        <!-- Profile Picture -->
-        <div class="dropdown dropdown-end">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full transition ease-in-out delay-100 hover:scale-110 duration-300">
-              <img
-                alt="Profile Picture"
-                src="/img/Pfp place horder.webp">
-            </div>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-blue-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li>
-              <a class="justify-between">
-                Profile
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
 
     <!--Main-->
     <div class="container md:pt-12 mx-auto flex flex-wrap flex-col md:flex-row">
       <!--Left Col-->
       <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-        <h1 class="my-4 text-3xl md:text-5xl text-gray-900 font-bold leading-tight text-center md:text-left">
-          Main
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-            Hero Message
+        <h1 class="my-4 text-3xl md:text-5xl text-gray-900 dark:text-gray-300 font-bold leading-tight text-center md:text-left">
+          Kalian 
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 dark:from-orange-600 via-pink-500 dark:via-red-600 to-purple-500 dark:to-purple-700">
+            Gamon
           </span>
-          to sell yourself!
+          tapi lagi lapar??
         </h1>
-        <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-          Sub-hero message, not too long and not too short. Make it just right!
+        <p class="leading-normal text-gray-300 md:text-2xl mb-8 text-center md:text-left">
+          DW bro I got you a Nomon. No gamon gamon rasa lama gone, we got you rasa baru.
         </p>
 
         <div class="flex flex-col justify-center items-center md:w-full"> 
-        <form class="bg-gradient-to-r from-purple-400 to-blue-400 shadow-lg w-5/6 md:w-full px-8 pt-6 pb-8 mb-4">
+        <form class="bg-gradient-to-r from-indigo-400 dark:from-indigo-700 to-violet-400 dark:to-violet-600 shadow-lg w-5/6 md:w-full px-8 pt-6 pb-8 mb-4">
           <div class="mb-4">
             <label class="block text-white py-2 font-bold mb-2" for="emailaddress">
-              Signup for our newsletter
+              Signup here to recieve our updated about this website
             </label>
             <input
               class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
@@ -138,7 +67,7 @@
 
           <div class="flex items-center justify-between pt-4">
             <button
-              class="bg-gradient-to-r from-purple-800 to-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+              class="bg-gradient-to-r from-purple-800 dark:from-red-600 to-blue-500 dark:to-pink-600 text-white font-bold py-2 px-4 rounded focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
               type="button"
             >
               Sign Up
@@ -153,11 +82,121 @@
         <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="/img/E-commerce food image.png" />
       </div>
       </div>
+    <!-- Product List -->
+      <div class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8">Introducing Our Latest Product</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+              <!-- Product 1 -->
+                <div class="flex flex-col justify-between dark:bg-white bg-gray-600 rounded-lg shadow-lg p-8">
+                  <div>  
+                  <div class="relative overflow-hidden transition transform ease-in-out hover:scale-110">
+                        <img class="h-44 w-56 object-cover rounded-xl" src="/img/Hot Dogs.png" alt="Hotdog">
+                    </div>
+                    <h3 class="text-xl font-bold text-white dark:text-gray-900 mt-4">Américain-bouchon-wannabe</h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-between mt-4">
+                      <span class="text-gray-200 dark:text-gray-900 font-bold text-lg">$329.99</span>
+                    <div class="transition transform ease-in-out hover:scale-110">
+                      <button class="bg-gray-300 dark:bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 ">Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="flex flex-col justify-between dark:bg-white bg-gray-600 rounded-lg shadow-lg p-8">
+                  <div>
+                  <div class="relative overflow-hidden transition transform ease-in-out hover:scale-110">
+                      <img class="h-44 w-56 object-cover rounded-xl" src="/img/Tacos.png" alt="Tacos">
+                  </div>
+                  <h3 class="text-xl font-bold  text-white dark:text-gray-900 mt-4">Wasian Taco de carnitas</h3>
+                  </div>
+                  <div class="flex flex-col items-center justify-between mt-4">
+                    <span class="text-gray-200 dark:text-gray-900 font-bold text-lg">$309.99</span>
+                  <div class="transition transform ease-in-out hover:scale-110">
+                    <button class="bg-gray-300 dark:bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 ">Add to Cart</button>
+                  </div>
+                  </div>
+              </div>
+                <!-- Product 3 -->
+                <div class="flex flex-col justify-between dark:bg-white bg-gray-600 rounded-lg shadow-lg p-8">
+                  <div>
+                  <div class="relative overflow-hidden transition transform ease-in-out hover:scale-110">
+                      <img class="h-44 w-56 object-cover rounded-xl" src="/img/Corn Soup.png" alt="Product">
+                  </div>
+                  <h3 class="text-xl font-bold  text-white dark:text-gray-900 mt-4">Authenthic Vintage soupe à le maïs</h3>
+                  </div>
+                  <div class="flex flex-col items-center justify-between mt-4">
+                    <span class="text-gray-200 dark:text-gray-900 font-bold text-lg">$349.99</span>
+                  <div class="transition transform ease-in-out hover:scale-110">
+                    <button class="bg-gray-300 dark:bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 ">Add to Cart</button>
+                  </div>
+                  </div>
+              </div>
+               <!-- Product 4 -->
+               <div class="flex flex-col justify-between dark:bg-white bg-gray-600 rounded-lg shadow-lg p-8">
+                <div>
+                <div class="relative overflow-hidden transition transform ease-in-out hover:scale-110">
+                    <img class="h-44 w-56 object-cover rounded-xl" src="/img/Cappucino Sakura.png" alt="Cappucino">
+                </div>
+                <h3 class="text-xl font-bold  text-white dark:text-gray-900 mt-4">French un café allongé</h3>
+                </div>
+                <div class="flex flex-col items-center justify-between mt-4">
+                  <span class="text-gray-200 dark:text-gray-900 font-bold text-lg">$60.99</span>
+                <div class="transition transform ease-in-out hover:scale-110">
+                  <button class="bg-gray-300 dark:bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 ">Add to Cart</button>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="static bottom-0 mt-auto">
-      <hr>
-      <p class="text-center"> This website created with <a href="https://tailwindcss.com/" class="text-purple-700 hover:underline">TailwindCSS</a> & <a href="https://daisyui.com/" class="text-purple-700 hover:underline">DaisyUI</a></p>
-    </footer>
+    <footer class="px-3 pt-4 lg:px-9 bg-gray-600 dark:bg-gray-50">
+      <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+  
+          <div class="sm:col-span-2">
+            <a href="index.html">
+              <img src="/img/Nomon Logo.png" alt="Nomon Logo" class="object-center w-2/5">
+              </a>
+              <div class="mt-6 lg:max-w-xl">
+                  <p class="text-sm text-gray-200 dark:text-gray-800">
+                    Bonjour!! Selamat datang di website terbaru kami Nomon!! There's a lot of fancy food product that we sell in Nomon totally not rigged!
+                    Banyak berbagai makanan dengan cita rasa yang baru di Nomon. Daripada gamon-in dia terus~ Ayo beli produk makanan kami di Nomon!!
+                      </p>
+              </div>
+          </div>
+  
+          <div class="flex flex-col gap-2 text-sm">
+              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Popular Product</p>
+              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">French un café allongé</a>
+              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">Authenthic Vintage soupe à le maïs </a>
+              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">Américain-bouchon-wannabe </a>
+              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Latest Updated</p>
+              <a href="#" class="text-gray-200 dark:text-gray-800">Blogs 1</a>
+              <a href="#" class="text-gray-200 dark:text-gray-800">Blogs 2</a>
+          </div>
+          <div>
+              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Contacts</p>
+              <div class="flex">
+                  <p class="mr-1 text-gray-200 dark:text-gray-800">Email:</p>
+                  <a href="#" title="send email">Nomon@gmail.com</a>
+              </div>
+          </div>
+  
+      </div>
+  
+      <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+          <p class="text-sm text-gray-200 dark:text-gray-600">© Copyright 2023 Company. All rights reserved. Build with <a href="https://tailwindcss.com/" class="text-purple-700 hover:underline">TailwindCSS</a> & <a href="https://daisyui.com/" class="text-purple-700 hover:underline">DaisyUI</a></p>
+          <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+              <li>
+                  <a href="#"
+                      class="text-sm text-gray-200 dark:text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Disclaimer
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </footer>
   </body>
 </html>
