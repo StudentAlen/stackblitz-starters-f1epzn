@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen dark:bg-gray-800">
+    <div>
+      <section>
+        <div class="flex flex-col justify-center items-center mx-auto">
+          <a href="../index.html">
+            <img class="max-w-full h-auto" src="../img/Nomon Logo.png" alt="Nomon Logo">
+          </a>
+        </div>
+      </section>
+    </div>
+        <!-- container -->
+<div class="navbar flex justify-center items-center">
+  <!-- card -->
+  <div class="shadow-teal-300 shadow-md max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg dark:bg-gray-700 dark:text-gray-300">
+      <div class="navbar-center flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/index.html">Home</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/blogs.html">Blogs</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/About us.html">About us</a></li>
+            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/Product.html">Product</a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+<!--
+  This example requires some changes to your config:
+-->
+    <!-- Image gallery -->
+    <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+      <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+        <img src="/img/hotdog3.jpg" alt="HotDog" class="h-full w-full object-cover object-center">
+      </div>
+      <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+          <img src="/img/Hot Dogs.png" alt="HotDog" class="h-full w-full object-cover object-center">
+        </div>
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+          <img src="/img/Hotdog.jpg" alt="HotDog" class="h-full w-full object-cover object-center">
+        </div>
+      </div>
+      <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+        <img src="/img/hotdog4.jpg" alt="HotDog" class="h-full w-full object-cover object-center">
+      </div>
+    </div>
+
+    <!-- Product info -->
+    <div class="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
+      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Américain-bouchon-wannabe</h1>
+      </div>
+
+      <!-- Options -->
+      <div class="mt-4 lg:row-span-3 lg:mt-0">
+        <h2 class="sr-only">Américain-bouchon-wannabe</h2>
+        <p class="text-3xl tracking-tight text-gray-900">$329.99</p>
+
+        <!-- Reviews -->
+        <div class="mt-6">
+          <h3 class="sr-only">Reviews</h3>
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <!-- Active: "text-gray-900", Default: "text-gray-200" -->
+              <svg class="h-5 w-5 shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+              </svg>
+              <svg class="h-5 w-5 shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+              </svg>
+              <svg class="h-5 w-5 shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+              </svg>
+              <svg class="h-5 w-5 shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+              </svg>
+              <svg class="h-5 w-5 shrink-0 text-gray-200" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="sr-only">4 out of 5 stars</p>
+            <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">68 reviews</a>
+          </div>
+        </div>
+
+        <form class="mt-10">
+        
+        
+
+
+          <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Order</button>
+        </form>
+      </div>
+
+      <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6">
+        <!-- Description and details -->
+        <div>
+          <h3 class="sr-only">Description</h3>
+
+          <div class="space-y-6">
+            <p class="text-base text-gray-900">Get ready to experience burger perfection in every bite! This masterpiece starts with a juicy, perfectly seared beef patty, tender and full of flavor, sandwiched between a toasted, golden brioche bun. The rich, savory flavor of the patty is balanced by the creamy, melting cheddar cheese, adding a smooth, tangy kick. Crisp, fresh lettuce and a slice of tomato bring a burst of freshness, while the pickles provide that satisfying crunch and tang. Finished with a dollop of mayo and a splash of ketchup, every component comes together for the ultimate bite of burger bliss.</p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h3 class="text-sm font-medium text-gray-900">Ingredients</h3>
+
+          <div class="mt-4">
+            <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+              <li class="text-gray-400"><span class="text-gray-600">Brioche Bun</span></li>
+              <li class="text-gray-400"><span class="text-gray-600">Beef Patty</span></li>
+              <li class="text-gray-400"><span class="text-gray-600">Cheddar Cheese</span></li>
+              <li class="text-gray-400"><span class="text-gray-600">Lettuce</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <h2 class="text-sm font-medium text-gray-900">Best Review</h2>
+
+          <div class="mt-4 space-y-6">
+            <p class="text-sm text-gray-600">This burger is an absolute flavor bomb. The beef patty is perfectly cooked—juicy on the inside with a beautifully crisp outer layer. The brioche bun is a soft, buttery pillow that holds everything together without overwhelming the taste. The cheddar cheese melts beautifully, creating a rich, savory layer that compliments the beef perfectly. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    <!-- Footer -->
+    <footer class="px-3 pt-4 lg:px-9 bg-gray-600 dark:bg-gray-50">
+      <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+  
+          <div class="sm:col-span-2">
+            <a href="index.html">
+              <img src="/img/Nomon Logo.png" alt="Nomon Logo" class="object-center w-2/5">
+              </a>
+              <div class="mt-6 lg:max-w-xl">
+                  <p class="text-sm text-gray-200 dark:text-gray-800">
+                    Bonjour!! Selamat datang di website terbaru kami Nomon!! There's a lot of fancy food product that we sell in Nomon totally not rigged!
+                    Banyak berbagai makanan dengan cita rasa yang baru di Nomon. Daripada gamon-in dia terus~ Ayo beli produk makanan kami di Nomon!!
+                      </p>
+              </div>
+          </div>
+  
+          <div class="flex flex-col gap-2 text-sm">
+              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Popular Product</p>
+              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">French un café allongé</a>
+              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">Authenthic Vintage soupe à le maïs </a>
+              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">Américain-bouchon-wannabe </a>
+              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Latest Updated</p>
+              <a href="#" class="text-gray-200 dark:text-gray-800">Blogs 1</a>
+              <a href="#" class="text-gray-200 dark:text-gray-800">Blogs 2</a>
+          </div>
+          <div>
+              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Contacts</p>
+              <div class="flex">
+                  <p class="mr-1 text-gray-200 dark:text-gray-800">Email:</p>
+                  <a href="#" title="send email">Nomon@gmail.com</a>
+              </div>
+          </div>
+  
+      </div>
+  
+      <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+          <p class="text-sm text-gray-200 dark:text-gray-600">© Copyright 2023 Company. All rights reserved. Build with <a href="https://tailwindcss.com/" class="text-purple-700 hover:underline">TailwindCSS</a> & <a href="https://daisyui.com/" class="text-purple-700 hover:underline">DaisyUI</a></p>
+          <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+              <li>
+                  <a href="#"
+                      class="text-sm text-gray-200 dark:text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Disclaimer
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+  </body>
+</html>
