@@ -34,6 +34,8 @@
       </div>
   </div>
 </div>
+
+<div class="bg-white rounded-2xl mx-auto my-6">
 <!--
   This example requires some changes to your config:
 -->
@@ -94,11 +96,16 @@
         </div>
 
         <form class="mt-10">
-        
-        
-
-
-          <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Order</button>
+          <div x-show="!card" x-cloak>
+            <script src="https://www.paypal.com/sdk/js?client-id=BAAr9fEtYbuAGG4y4PwxOIgyKFpR6tkm8S2dBXwQo27KiZLZFeJO0nSMfE_eY1lgCrfwGgyMRYMzCfXY7g&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+            <div id="paypal-container-DTU5SAQK6ABH4"></div>
+            <script>
+              paypal.HostedButtons({
+                hostedButtonId: "DTU5SAQK6ABH4",
+              }).render("#paypal-container-DTU5SAQK6ABH4")
+            </script>
+            <div class="text-xs text-gray-500 italic text-center">You'll be charged $299.99, including $48 for VAT in Indonesia.</div>
+          </div>
         </form>
       </div>
 
@@ -135,12 +142,10 @@
       </div>
     </div>
   </div>
-</div>
    
-    <!-- Footer -->
-    <footer class="px-3 pt-4 lg:px-9 bg-gray-600 dark:bg-gray-50">
-      <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
-  
+<!-- Footer -->
+    <footer class="bg-gray-600 dark:bg-gray-50 px-3 mt-4 lg:px-9">
+      <div class="pt-3 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="sm:col-span-2">
             <a href="index.html">
               <img src="/img/Nomon Logo.png" alt="Nomon Logo" class="object-center w-2/5">
@@ -154,13 +159,12 @@
           </div>
   
           <div class="flex flex-col gap-2 text-sm">
-              <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Popular Product</p>
-              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">French un café allongé</a>
-              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">Authenthic Vintage soupe à le maïs </a>
-              <a href="/Page/ProductDesc.html" class="text-gray-200 dark:text-gray-800">Américain-bouchon-wannabe </a>
+            <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Popular Product</p>
+              <a href="/Page/Burger.html" class="text-gray-200 dark:text-gray-800">Américain-bouchon-wannabe</a>
+              <a href="/Page/Taco.html" class="text-gray-200 dark:text-gray-800">Wasian Taco de Carnitas </a>
               <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Latest Updated</p>
-              <a href="#" class="text-gray-200 dark:text-gray-800">Blogs 1</a>
-              <a href="#" class="text-gray-200 dark:text-gray-800">Blogs 2</a>
+              <a href="/Page/isiblog/Nomon.html" class="text-gray-200 dark:text-gray-800">Brand New Opening Nomon!</a>
+              <a href="/Page/isiblog/product baru.html" class="text-gray-200 dark:text-gray-800">Product Baru: French un café allongé</a>
           </div>
           <div>
               <p class="text-base font-bold tracking-wide text-gray-200 dark:text-gray-900">Contacts</p>
@@ -185,3 +189,4 @@
   </footer>
   </body>
 </html>
+
