@@ -5,12 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="email.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="dark:bg-gray-800">
+    <button class="shadow-teal-300 shadow-md rounded-2xl dark:bg-gray-700 dark:text-gray-300 fixed right-4 bottom-6 z-40" 
+    id="logout"
+    type="button">
+      <img class="w-7 m-2" src="/img/Logout.png" alt="logout">
+    </button>
     <div>
       <section>
         <div class="flex flex-col justify-center items-center mx-auto">
@@ -51,23 +56,24 @@
         </p>
 
         <div class="flex flex-col justify-center items-center md:w-full"> 
-        <form class="bg-gradient-to-r from-indigo-400 dark:from-indigo-700 to-violet-400 dark:to-violet-600 shadow-lg w-5/6 md:w-full px-8 pt-6 pb-8 mb-4">
+        <form class="bg-gradient-to-r from-indigo-400 dark:from-indigo-700 to-violet-400 dark:to-violet-600 shadow-lg w-5/6 md:w-full px-8 pt-6 pb-8 mb-4"
+        id="register">
           <div class="mb-4">
             <label class="block text-white py-2 font-bold mb-2" for="emailaddress">
               Signup here to recieve our updated about this website
             </label>
             <input
               class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-              id="emailaddress"
+              id="email"
               type="text"
               placeholder="you@somewhere.com"
-            />
+            /> 
           </div>
 
           <div class="flex items-center justify-between pt-4">
             <button
               class="bg-gradient-to-r from-purple-800 dark:from-red-600 to-blue-500 dark:to-pink-600 text-white font-bold py-2 px-4 rounded focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
-              type="button"
+              type="submit"
             >
               Sign Up
             </button>
