@@ -25,3 +25,10 @@ registerForm.addEventListener("submit", function (e) {
         document.querySelector('#register').remove();
     }
 });
+
+const logoutUser = document.querySelector('#logout');
+
+logoutUser.addEventListener('submit', function(e) {
+    localStorage.removeItem('user');
+    location.reload();
+});
