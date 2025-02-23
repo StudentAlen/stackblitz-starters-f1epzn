@@ -8,12 +8,19 @@
     <script type="module" src="email.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function logout() {
+        localStorage.removeItem('user');
+        location.reload();
+      }
+      
+    </script>
   </head>
 
   <body class="dark:bg-gray-800">
     <button class="shadow-teal-300 shadow-md rounded-2xl dark:bg-gray-700 dark:text-gray-300 fixed right-4 bottom-6 z-40" 
-    id="logout"
-    type="button">
+    onclick="logout()"
+    type="submit">
       <img class="w-7 m-2" src="/img/Logout.png" alt="logout">
     </button>
     <div>
