@@ -1,0 +1,41 @@
+body {
+background-color: #eabe8e;
+}
+
+p {
+color: #7e1f0e;
+}
+
+footer {
+background-color: #f19743;
+}
+
+.nav {
+background-color: #e96a13;
+box-shadow: 3px 4px #c5570e;
+}
+
+.textnav {
+color:#7c120a; 
+}
+
+.textfooter {
+color: #fdcbae;
+text-decoration: none;
+}
+
+.textfooter:hover {
+color: #fabc5f;
+text-decoration: underline;
+}
+
+.grad{
+background: rgb(195,44,15);
+background: linear-gradient(90deg, rgba(195,44,15,1) 11%, rgba(233,73,5,1) 57%, rgba(248,132,13,1) 100%);
+}
+
+.gradbutton {
+background: rgb(154,2,2);
+background: linear-gradient(90deg, rgba(154,2,2,1) 14%, rgba(212,4,4,1) 76%);
+box-shadow:3px 2px rgb(131, 7, 7);
+}
