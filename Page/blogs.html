@@ -5,9 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="../like button.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .thumb-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .thumb-button:hover {
+            transform: scale(1.1);
+        }
+        .thumb-icon {
+            width: 32px;
+            height: 32px;
+            fill: #555;
+            transition: fill 0.2s ease;
+        }
+        .clicked .thumb-icon {
+            fill: #ff0000;
+        }
+        .counter {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
   </head>
 
 <body class="flex flex-col flex-warp min-h-screen dark:bg-gray-800"> 
@@ -36,10 +72,9 @@
 </div>
         
 <!-- Blogs -->
-<main>
-<div class="container flex flex-col min-h-screen px-4 md:m-8 gap-40 md:gap-36">
+<div class="container flex flex-col min-h-screen m-8 gap-40">
   <!-- Blog 1 -->
-<div class="card image-full w-full h-12 shadow-xl">
+<div class="card image-full w-full h-5 shadow-xl mb-24">
   <figure>
     <img
       src="/img/Brand New Opening.jpg"
@@ -49,14 +84,31 @@
     <h2 class="card-title">Brand New Opening Nomon!</h2>
     <p>Selamat datang di Nomon!</p>
     <div class="card-actions justify-end">
-    <a href="/Page/isiblog/Nomon.html">
-      <button class="btn btn-primary">Check it Out!</button>
-    </a>
+      <button class="btn btn-primary"><a href="/Page/isiblog/Nomon.html">Check it Out!</a></button>
+  <!-- Like button -->
+      <div class="container">
+          <div class="button-container">
+              <button id="likeBtn" class="thumb-button">
+                  <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
+                  </svg>
+              </button>
+              <span id="likeCounter" class="counter">0</span>
+          </div>
+          <div class="button-container">
+              <button id="dislikeBtn" class="thumb-button">
+                  <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                  </svg>
+              </button>
+              <span id="dislikeCounter" class="counter">0</span>
+          </div>
+      </div>
     </div>
   </div>
-</div>
+  </div>
   <!-- Blog 2 -->
-<div class="card image-full w-full h-12 shadow-xl">
+<div class="card image-full w-full h-12 shadow-xl mb-24">
     <figure>
       <img
         src="/img/Cappucino Sakura.png"
@@ -70,10 +122,28 @@
         <button class="btn btn-primary">Check it Out!</button>
       </a>
       </div>
+        <!-- Like button -->
+    <div class="container">
+        <div class="button-container">
+            <button id="likeBtn" class="thumb-button">
+                <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
+                </svg>
+            </button>
+            <span id="likeCounter" class="counter">0</span>
+        </div>
+        <div class="button-container">
+            <button id="dislikeBtn" class="thumb-button">
+                <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                </svg>
+            </button>
+            <span id="dislikeCounter" class="counter">0</span>
+        </div>
+    </div>
+    </div>
     </div>
 </div>
-</div>
-</main>
 
 <!-- Footer -->
      <footer class="shadow-inner shadow-slate-700 bg-gray-200 dark:bg-gray-900 px-3 mt-4 lg:px-9">
