@@ -10,6 +10,42 @@
     <link rel="icon" href="/Pics/Nomon Logo.png">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .thumb-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .thumb-button:hover {
+            transform: scale(1.1);
+        }
+        .thumb-icon {
+            width: 32px;
+            height: 32px;
+            fill: #555;
+            transition: fill 0.2s ease;
+        }
+        .clicked .thumb-icon {
+            fill: #ff0000;
+        }
+        .counter {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
   </head>
   
   <body class="dark:bg-gray-800">
@@ -70,6 +106,78 @@
                     <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
                         Tambah ke Keranjang
                     </button>
+                        <div class="container">
+                            <div class="button-container">
+                                <button id="likeBtn" class="thumb-button">
+                                    <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
+                                    </svg>
+                                </button>
+                                <span id="likeCounter" class="counter">0</span>
+                            </div>
+                            <div class="button-container">
+                                <button id="dislikeBtn" class="thumb-button">
+                                    <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
+                                    </svg>
+                                </button>
+                                <span id="dislikeCounter" class="counter">0</span>
+                            </div>
+                        </div>
+                    
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const likeBtn = document.getElementById('likeBtn');
+                                const dislikeBtn = document.getElementById('dislikeBtn');
+                                const likeCounter = document.getElementById('likeCounter');
+                                const dislikeCounter = document.getElementById('dislikeCounter');
+                                
+                                let likeCount = 0;
+                                let dislikeCount = 0;
+                                let likeActive = false;
+                                let dislikeActive = false;
+                                
+                                likeBtn.addEventListener('click', () => {
+                                    if (!likeActive) {
+                                        likeCount++;
+                                        likeCounter.textContent = likeCount;
+                                        likeBtn.classList.add('clicked');
+                                        likeActive = true;
+                                        
+                                        // If dislike was active, reset it
+                                        if (dislikeActive) {
+                                            dislikeBtn.classList.remove('clicked');
+                                            dislikeActive = false;
+                                        }
+                                    } else {
+                                        likeCount--;
+                                        likeCounter.textContent = likeCount;
+                                        likeBtn.classList.remove('clicked');
+                                        likeActive = false;
+                                    }
+                                });
+                                
+                                dislikeBtn.addEventListener('click', () => {
+                                    if (!dislikeActive) {
+                                        dislikeCount++;
+                                        dislikeCounter.textContent = dislikeCount;
+                                        dislikeBtn.classList.add('clicked');
+                                        dislikeActive = true;
+                                        
+                                        // If like was active, reset it
+                                        if (likeActive) {
+                                            likeBtn.classList.remove('clicked');
+                                            likeActive = false;
+                                        }
+                                    } else {
+                                        dislikeCount--;
+                                        dislikeCounter.textContent = dislikeCount;
+                                        dislikeBtn.classList.remove('clicked');
+                                        dislikeActive = false;
+                                    }
+                                });
+                            });
+                        </script>
                 </div>
             </div>
         </div>
