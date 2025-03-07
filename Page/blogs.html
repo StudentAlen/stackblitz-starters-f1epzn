@@ -4,7 +4,7 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../pumpkin.css" />
     <script type="module" src="../like button.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,7 +46,7 @@
     </style>
   </head>
 
-<body class="flex flex-col flex-warp min-h-screen dark:bg-gray-800"> 
+<body class="flex flex-col flex-warp min-h-screen"> 
 <div class="flex-grow mx-auto px-8 py-10 lg:py-20">
       <section>
         <div class="flex flex-col justify-center items-center mx-auto">
@@ -59,13 +59,13 @@
         <!-- container -->
 <div class="navbar flex justify-center items-center sticky top-0 z-40">
   <!-- card -->
-  <div class="shadow-teal-300 shadow-md max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg dark:bg-gray-700 dark:text-gray-300">
+  <div class="nav max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg">
       <div class="navbar-center flex">
         <ul class="menu menu-horizontal px-1">
-          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/index.html">Home</a></li>
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/blogs.html">Blogs</a></li>
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/About us.html">About us</a></li>
-            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/Product.html">Product</a></li>
+          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/index.html">Home</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/blogs.html">Blogs</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/About us.html">About us</a></li>
+            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/Product.html">Product</a></li>
         </ul>
       </div>
   </div>
@@ -84,7 +84,7 @@
     <h2 class="card-title">Brand New Opening Nomon!</h2>
     <p>Selamat datang di Nomon!</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary"><a href="/Page/isiblog/Nomon.html">Check it Out!</a></button>
+      <button class="btn blogbutton"><a href="/Page/isiblog/Nomon.html">Check it Out!</a></button>
   <!-- Like button -->
       <div class="container">
           <div class="button-container">
@@ -119,7 +119,7 @@
       <p>Kopi Authenthic dengan ukiran bunga sakura diatasnya</p>
       <div class="card-actions justify-end">
       <a href="/Page/isiblog/product baru.html">
-        <button class="btn btn-primary">Check it Out!</button>
+        <button class="blogbutton btn">Check it Out!</button>
       </a>
       </div>
         <!-- Like button -->
@@ -146,7 +146,7 @@
 </div>
 
 <!-- Footer -->
-     <footer class="shadow-inner shadow-slate-700 bg-gray-200 dark:bg-gray-900 px-3 mt-4 lg:px-9">
+     <footer class=textfooterpx-3 mt-4 lg:px-9">
       <div class="pt-3 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="sm:col-span-2">
             <a href="index.html">
@@ -161,18 +161,18 @@
           </div>
   
           <div class="flex flex-col gap-2 text-sm">
-            <p class="text-base font-bold tracking-wide text-gray-600 dark:text-blue-700">Popular Product</p>
-              <a href="/Page/Burger.html" class="text-gray-600 dark:text-indigo-400">Américain-bouchon-wannabe</a>
-              <a href="/Page/Taco.html" class="text-gray-600 dark:text-indigo-400">Wasian Taco de Carnitas </a>
-              <p class="text-base font-bold tracking-wide text-gray-600 dark:text-blue-700">Latest Updated</p>
-              <a href="/Page/isiblog/Nomon.html" class="text-gray-600 dark:text-indigo-400">Brand New Opening Nomon!</a>
-              <a href="/Page/isiblog/product baru.html" class="text-gray-600 dark:text-indigo-400">Product Baru: French un café allongé</a>
+            <p class="text-base font-bold tracking-wide ">Popular Product</p>
+              <a href="/Page/Burger.html" class="textfooter">Américain-bouchon-wannabe</a>
+              <a href="/Page/Taco.html" class="textfooter">Wasian Taco de Carnitas </a>
+              <p class="text-base font-bold tracking-wide ">Latest Updated</p>
+              <a href="/Page/isiblog/Nomon.html" class="textfooter">Brand New Opening Nomon!</a>
+              <a href="/Page/isiblog/product baru.html" class="textfooter">Product Baru: French un café allongé</a>
           </div>
           <div>
-              <p class="text-base font-bold tracking-wide text-gray-600 dark:text-blue-700">Contacts</p>
+              <p class="text-base font-bold tracking-wide ">Contacts</p>
               <div class="flex">
-                  <p class="mr-1 text-gray-600 dark:text-indigo-400">Email:</p>
-                  <a href="#" title="send email" class="text-blue-500">Nomon@gmail.com</a>
+                  <p class="mr-1 textfooter">Email:</p>
+                  <a href="#" title="send email" class="textfooter">Nomon@gmail.com</a>
               </div>
           </div>
   
