@@ -23,5 +23,6 @@ registerForm.addEventListener("submit", function (e) {
         alert("xie xie peng you!");
         localStorage.setItem ('user', emailValue);
         document.querySelector('#register').remove();
+        location.reload();
     }
 });

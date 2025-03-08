@@ -4,8 +4,8 @@
     <title>Foodies</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="../../like button.js"></script>
+    <link rel="stylesheet" href="../../theme.css" />
     <link rel="About Me" href="https://www.Nomon/Foods">
     <link rel="icon" href="/Pics/Nomon Logo.png">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -48,7 +48,17 @@
     </style>
   </head>
   
-  <body class="dark:bg-gray-800">
+  <body class="">
+    <form class="color-picker">
+        <fieldset class="justify-center">
+          <legend class="textnav font-bold text-lg">Pick theme color</legend>
+          <label for="pumpkin" class="sr-only">pumpkin</label>
+          <input type="radio" name="theme" id="pumpkin" checked>
+    
+          <label for="sakura" class="sr-only">sakura</label>
+          <input type="radio" name="theme" id="sakura" checked>
+          </fieldset>
+        </form>
     <div class="flex-grow mx-auto px-8 py-10 lg:py-20">
         <section>
           <div class="flex flex-col justify-center items-center mx-auto">
@@ -61,14 +71,14 @@
     <!-- container -->
 <div class="navbar flex justify-center items-center sticky top-0 z-40">
     <!-- card -->
-    <div class="shadow-teal-300 shadow-md max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg dark:bg-gray-700 dark:text-gray-300">
+    <div class="nav max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg">
         <div class="navbar-center flex">
-          <ul class="menu menu-horizontal px-1">
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/index.html">Home</a></li>
-              <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/blogs.html">Blogs</a></li>
-              <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/About us.html">About us</a></li>
-              <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/Product.html">Product</a></li>
-          </ul>
+            <ul class="menu menu-horizontal px-1">
+                <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/index.html">Home</a></li>
+                  <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/blogs.html">Blogs</a></li>
+                  <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/About us.html">About us</a></li>
+                  <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/Product.html">Product</a></li>
+              </ul>
         </div>
     </div>
   </div>
@@ -92,7 +102,7 @@
                     <p class="text-gray-600 mb-6"></p>
                     Dengan suasana yang nyaman dan desain yang kekinian, Nomon cocok banget jadi pilihan buat kamu yang pengen menikmati hidangan lezat dan berbeda. Mau makan bareng teman, keluarga, atau bahkan solo dining, Nomon siap memanjakan lidahmu dengan pilihan menu yang pastinya nggak akan bikin bosen!
                     </p>    
-                    <div class="container">
+                    <div class="container mt-4">
                         <div class="button-container">
                             <button id="likeBtn" class="thumb-button">
                                 <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -112,57 +122,7 @@
                     </div>
                 
                     <script>
-                        document.addEventListener('DOMContentLoaded', () => {
-                            const likeBtn = document.getElementById('likeBtn');
-                            const dislikeBtn = document.getElementById('dislikeBtn');
-                            const likeCounter = document.getElementById('likeCounter');
-                            const dislikeCounter = document.getElementById('dislikeCounter');
-                            
-                            let likeCount = 0;
-                            let dislikeCount = 0;
-                            let likeActive = false;
-                            let dislikeActive = false;
-                            
-                            likeBtn.addEventListener('click', () => {
-                                if (!likeActive) {
-                                    likeCount++;
-                                    likeCounter.textContent = likeCount;
-                                    likeBtn.classList.add('clicked');
-                                    likeActive = true;
-                                    
-                                    // If dislike was active, reset it
-                                    if (dislikeActive) {
-                                        dislikeBtn.classList.remove('clicked');
-                                        dislikeActive = false;
-                                    }
-                                } else {
-                                    likeCount--;
-                                    likeCounter.textContent = likeCount;
-                                    likeBtn.classList.remove('clicked');
-                                    likeActive = false;
-                                }
-                            });
-                            
-                            dislikeBtn.addEventListener('click', () => {
-                                if (!dislikeActive) {
-                                    dislikeCount++;
-                                    dislikeCounter.textContent = dislikeCount;
-                                    dislikeBtn.classList.add('clicked');
-                                    dislikeActive = true;
-                                    
-                                    // If like was active, reset it
-                                    if (likeActive) {
-                                        likeBtn.classList.remove('clicked');
-                                        likeActive = false;
-                                    }
-                                } else {
-                                    dislikeCount--;
-                                    dislikeCounter.textContent = dislikeCount;
-                                    dislikeBtn.classList.remove('clicked');
-                                    dislikeActive = false;
-                                }
-                            });
-                        });
+                       
                     </script>
                 </body>
                 </html>            
@@ -289,15 +249,15 @@
 </div>
 
 <!-- Scrollable Footer -->
-<footer class="w-full bg-gray-800 text-white py-6">
+<footer class="w-full text-white py-6">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-xl font-bold">Artikel Populer</h3>
             <div class="flex space-x-4">
-                <button onclick="scrollLeft()" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition duration-300">
+                <button onclick="scrollLeft()" class="articlebutton px-4 py-2 rounded-lg transition duration-300">
                     ← Previous
                 </button>
-                <button onclick="scrollRight()" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition duration-300">
+                <button onclick="scrollRight()" class="articlebutton px-4 py-2 rounded-lg transition duration-300">
                     Next →
                 </button>
             </div>
@@ -306,19 +266,19 @@
         <div id="articleContainer">
             <div id="articles" class="flex space-x-6 transition-transform duration-500">
                 <!-- Article 1 -->
-                <div class="flex-none w-80 bg-gray-700 rounded-lg p-4 transition hover:scale-105 delay-100 duration-300">
+                <div class="articlefooter w-80 rounded-lg p-4 transition hover:scale-105 delay-100 duration-300">
                 <a href="Nomon.html">
                     <h4 class="font-bold text-lg mb-2">Brand New Opening Nomon!</h4>
-                    <p class="text-gray-300">
+                    <p class="">
                         Selamat datang di Nomon!
                     </p>
                 </a>
                 </div>
                 <!-- Article 2 -->
-                <div class="flex-none w-80 bg-gray-700 rounded-lg p-4 transition hover:scale-105 delay-100 duration-300">
+                <div class="articlefooter w-80 rounded-lg p-4 transition hover:scale-105 delay-100 duration-300">
                 <a href="product baru.html">
                     <h4 class="font-bold text-lg mb-2">French un café allongé</h4>
-                    <p class="text-gray-300">
+                    <p class="">
                         Kopi Authenthic dengan ukiran bunga sakura diatasnya
                     </p>
                 </a>
@@ -350,4 +310,3 @@
 </script>
 </body>
 </html>
-

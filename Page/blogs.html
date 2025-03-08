@@ -4,7 +4,7 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../theme.css" />
     <script type="module" src="../like button.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,7 +46,17 @@
     </style>
   </head>
 
-<body class="flex flex-col flex-warp min-h-screen dark:bg-gray-800"> 
+<body class="flex flex-col flex-warp min-h-screen"> 
+  <form class="color-picker">
+    <fieldset class="justify-center">
+      <legend class="textnav font-bold text-lg">Pick theme color</legend>
+      <label for="pumpkin" class="sr-only">pumpkin</label>
+      <input type="radio" name="theme" id="pumpkin" checked>
+
+      <label for="sakura" class="sr-only">sakura</label>
+      <input type="radio" name="theme" id="sakura" checked>
+      </fieldset>
+    </form>
 <div class="flex-grow mx-auto px-8 py-10 lg:py-20">
       <section>
         <div class="flex flex-col justify-center items-center mx-auto">
@@ -59,13 +69,13 @@
         <!-- container -->
 <div class="navbar flex justify-center items-center sticky top-0 z-40">
   <!-- card -->
-  <div class="shadow-teal-300 shadow-md max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg dark:bg-gray-700 dark:text-gray-300">
+  <div class="nav max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg">
       <div class="navbar-center flex">
         <ul class="menu menu-horizontal px-1">
-          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/index.html">Home</a></li>
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/blogs.html">Blogs</a></li>
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/About us.html">About us</a></li>
-            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a href="/Page/Product.html">Product</a></li>
+          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/index.html">Home</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/blogs.html">Blogs</a></li>
+            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/About us.html">About us</a></li>
+            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/Product.html">Product</a></li>
         </ul>
       </div>
   </div>
@@ -74,7 +84,7 @@
 <!-- Blogs -->
 <div class="container flex flex-col min-h-screen m-8 gap-40">
   <!-- Blog 1 -->
-<div class="card image-full w-full h-5 shadow-xl mb-24">
+<div class="card image-full w-full h-5 shadow-xl mb-8">
   <figure>
     <img
       src="/img/Brand New Opening.jpg"
@@ -84,31 +94,12 @@
     <h2 class="card-title">Brand New Opening Nomon!</h2>
     <p>Selamat datang di Nomon!</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary"><a href="/Page/isiblog/Nomon.html">Check it Out!</a></button>
-  <!-- Like button -->
-      <div class="container">
-          <div class="button-container">
-              <button id="likeBtn" class="thumb-button">
-                  <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                  </svg>
-              </button>
-              <span id="likeCounter" class="counter">0</span>
-          </div>
-          <div class="button-container">
-              <button id="dislikeBtn" class="thumb-button">
-                  <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
-                  </svg>
-              </button>
-              <span id="dislikeCounter" class="counter">0</span>
-          </div>
-      </div>
+      <button class="btn blogbutton"><a href="/Page/isiblog/Nomon.html">Check it Out!</a></button>
     </div>
   </div>
   </div>
   <!-- Blog 2 -->
-<div class="card image-full w-full h-12 shadow-xl mb-24">
+<div class="card image-full w-full h-12 shadow-xl mb-8">
     <figure>
       <img
         src="/img/Cappucino Sakura.png"
@@ -119,34 +110,15 @@
       <p>Kopi Authenthic dengan ukiran bunga sakura diatasnya</p>
       <div class="card-actions justify-end">
       <a href="/Page/isiblog/product baru.html">
-        <button class="btn btn-primary">Check it Out!</button>
+        <button class="blogbutton btn">Check it Out!</button>
       </a>
       </div>
-        <!-- Like button -->
-    <div class="container">
-        <div class="button-container">
-            <button id="likeBtn" class="thumb-button">
-                <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"/>
-                </svg>
-            </button>
-            <span id="likeCounter" class="counter">0</span>
-        </div>
-        <div class="button-container">
-            <button id="dislikeBtn" class="thumb-button">
-                <svg class="thumb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/>
-                </svg>
-            </button>
-            <span id="dislikeCounter" class="counter">0</span>
-        </div>
-    </div>
     </div>
     </div>
 </div>
 
 <!-- Footer -->
-     <footer class="shadow-inner shadow-slate-700 bg-gray-200 dark:bg-gray-900 px-3 mt-4 lg:px-9">
+     <footer class="textfooterpx-3 mt-4 lg:px-9">
       <div class="pt-3 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="sm:col-span-2">
             <a href="index.html">
@@ -161,18 +133,18 @@
           </div>
   
           <div class="flex flex-col gap-2 text-sm">
-            <p class="text-base font-bold tracking-wide text-gray-600 dark:text-blue-700">Popular Product</p>
-              <a href="/Page/Burger.html" class="text-gray-600 dark:text-indigo-400">Américain-bouchon-wannabe</a>
-              <a href="/Page/Taco.html" class="text-gray-600 dark:text-indigo-400">Wasian Taco de Carnitas </a>
-              <p class="text-base font-bold tracking-wide text-gray-600 dark:text-blue-700">Latest Updated</p>
-              <a href="/Page/isiblog/Nomon.html" class="text-gray-600 dark:text-indigo-400">Brand New Opening Nomon!</a>
-              <a href="/Page/isiblog/product baru.html" class="text-gray-600 dark:text-indigo-400">Product Baru: French un café allongé</a>
+            <p class="text-base font-bold tracking-wide ">Popular Product</p>
+              <a href="/Page/Burger.html" class="textfooter">Américain-bouchon-wannabe</a>
+              <a href="/Page/Taco.html" class="textfooter">Wasian Taco de Carnitas </a>
+              <p class="text-base font-bold tracking-wide ">Latest Updated</p>
+              <a href="/Page/isiblog/Nomon.html" class="textfooter">Brand New Opening Nomon!</a>
+              <a href="/Page/isiblog/product baru.html" class="textfooter">Product Baru: French un café allongé</a>
           </div>
           <div>
-              <p class="text-base font-bold tracking-wide text-gray-600 dark:text-blue-700">Contacts</p>
+              <p class="text-base font-bold tracking-wide ">Contacts</p>
               <div class="flex">
-                  <p class="mr-1 text-gray-600 dark:text-indigo-400">Email:</p>
-                  <a href="#" title="send email" class="text-blue-500">Nomon@gmail.com</a>
+                  <p class="mr-1 textfooter">Email:</p>
+                  <a href="#" title="send email" class="textfooter">Nomon@gmail.com</a>
               </div>
           </div>
   
