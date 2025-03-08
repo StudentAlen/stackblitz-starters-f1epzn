@@ -35,7 +35,7 @@ body {
   color: rgb(2, 0, 0);
 }
 
-.item-favorites-button:hoser {
+.item-favorites-button:hover {
   color: rgb(255, 0, 98);
 }
 
