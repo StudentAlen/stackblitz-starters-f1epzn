@@ -9,6 +9,36 @@ body {
   background-color: white;
 }
 
+.item-favorites-containers {
+  display: flex;
+  padding: 12px 0;
+}
+
+.item-favorites {
+  display: flex;
+  align-items: center;
+  cursor: default; 
+}
+
+.item-favorites:not(:last-child) {
+  margin-right: 12px;
+}
+
+.item-favorites-button {
+  margin-right: 6px;
+  cursor: pointer;
+  color: #555555;
+}
+
+.item-favorites-selected > .item-favorites-button,
+.item-favorites-selected > .item-favorites-count {
+  color: rgb(2, 0, 0);
+}
+
+.item-favorites-button:hoser {
+  color: rgb(255, 0, 98);
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
