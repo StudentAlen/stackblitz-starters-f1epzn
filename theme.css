@@ -119,7 +119,7 @@ body {
     
     :root:has(#pumpkin:checked) {
         --clr-body-bg: #eabe8e;
-        --clr-text: #7e1f0e;
+        --clr-text: #ffffff;
         --clr-footer: #f19743;
         --clr-shadow-footer: #d48a41;
         --clr-main-text: linear-gradient(90deg, rgb(221, 88, 10) 45%, rgb(243, 124, 26)70%) ;
