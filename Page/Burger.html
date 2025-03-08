@@ -4,13 +4,25 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="../pumpkin.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <script type="module" src="../like button.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   </head>
 
   <body class="min-h-screen">
+    <form class="color-picker">
+      <fieldset class="justify-center">
+        <legend class="textnav font-bold text-lg">Pick theme color</legend>
+        <label for="pumpkin" class="sr-only">pumpkin</label>
+        <input type="radio" name="theme" id="pumpkin" checked>
+  
+        <label for="sakura" class="sr-only">sakura</label>
+        <input type="radio" name="theme" id="sakura" checked>
+        </fieldset>
+      </form>
     <div>
       <section>
         <div class="flex flex-col justify-center items-center mx-auto">
@@ -65,9 +77,13 @@
 
       <!-- Options -->
       <div class="mt-4 lg:row-span-3 lg:mt-0">
-        <h2 class="sr-only">Américain-bouchon-wannabe</h2>
-        <p class="text-3xl tracking-tight text-gray-900">$329.99</p>
-
+        <h2 class="sr-only">Wasian Taco de Carnitas</h2>
+        <p class="text-3xl tracking-tight text-gray-900">$309.99
+          <div class="item-favorites-containers">
+              <button id="burger" class="item-favorites-button material-icons-outlined">star</button>
+              <span id="burgercounter" class="item-favorites-count">0</span>
+          </div>
+        </p>
         <!-- Reviews -->
         <div class="mt-6">
           <h3 class="sr-only">Reviews</h3>
@@ -144,7 +160,7 @@
   </div>
    
 <!-- Footer -->
-<footer class=textfooterpx-3 mt-4 lg:px-9">
+<footer class="textfooter px-3 mt-4 lg:px-9">
   <div class="pt-3 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
       <div class="sm:col-span-2">
         <a href="index.html">

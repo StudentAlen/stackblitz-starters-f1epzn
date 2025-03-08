@@ -4,35 +4,48 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="../pumpkin.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../theme.css" />
+    <script type="module" src="../like button.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+</head>
 
-  <body class="flex flex-col">
-    <div>
-      <section>
-        <div class="flex flex-col justify-center items-center mx-auto">
-          <a href="../index.html">
-            <img class="max-w-full h-auto" src="../img/Nomon Logo.png" alt="Nomon Logo">
-          </a>
-        </div>
-      </section>
-    </div>
-        <!-- container -->
-<div class="navbar flex justify-center items-center sticky top-0 z-40">
-  <!-- card -->
-  <div class="nav max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg">
-      <div class="navbar-center flex">
-        <ul class="menu menu-horizontal px-1">
-          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/index.html">Home</a></li>
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/blogs.html">Blogs</a></li>
-            <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/About us.html">About us</a></li>
-            <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/Product.html">Product</a></li>
-        </ul>
+  
+<body class="min-h-screen">
+  <form class="color-picker">
+    <fieldset class="justify-center">
+      <legend class="textnav font-bold text-lg">Pick theme color</legend>
+      <label for="pumpkin" class="sr-only">pumpkin</label>
+      <input type="radio" name="theme" id="pumpkin" checked>
+
+      <label for="sakura" class="sr-only">sakura</label>
+      <input type="radio" name="theme" id="sakura" checked>
+      </fieldset>
+    </form>
+  <div>
+    <section>
+      <div class="flex flex-col justify-center items-center mx-auto">
+        <a href="../index.html">
+          <img class="max-w-full h-auto" src="../img/Nomon Logo.png" alt="Nomon Logo">
+        </a>
       </div>
+    </section>
   </div>
+      <!-- container -->
+<div class="navbar flex justify-center items-center sticky top-0 z-40">
+<!-- card -->
+<div class="nav max-w-2xl px-1 md:px-16 lg:px-32 rounded-lg">
+    <div class="navbar-center flex">
+      <ul class="menu menu-horizontal px-1">
+        <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/index.html">Home</a></li>
+          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/blogs.html">Blogs</a></li>
+          <li class="transition font-bold ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/About us.html">About us</a></li>
+          <li class="transition font-bold 4 ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"><a class="textnav" href="/Page/Product.html">Product</a></li>
+      </ul>
+    </div>
+</div>
 </div>
 
 <div class="bg-white rounded-2xl mx-auto my-6">
@@ -66,8 +79,14 @@
       <!-- Options -->
       <div class="mt-4 lg:row-span-3 lg:mt-0">
         <h2 class="sr-only">Wasian Taco de Carnitas</h2>
-        <p class="text-3xl tracking-tight text-gray-900">$309.99</p>
-
+        <p class="text-3xl tracking-tight text-gray-900">$309.99
+          <div class="item-favorites-containers">
+            <div class="item-favorites item-favorites-selected">
+              <span class="item-favorites-button material-icons-outlined">star</span>
+              <span class="item-favorites-count">0</span>
+            </div>
+          </div>
+        </p>
         <!-- Reviews -->
         <div class="mt-6">
           <h3 class="sr-only">Reviews</h3>
@@ -142,7 +161,7 @@
 </div>
 
     <!-- Footer -->
-    <footer class=textfooterpx-3 mt-4 lg:px-9">
+    <footer class="textfooter px-3 mt-4 lg:px-9">
       <div class="pt-3 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="sm:col-span-2">
             <a href="index.html">

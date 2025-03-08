@@ -4,16 +4,23 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-
-
-
-    <link rel="stylesheet" href="../pumpkin.css" />
+    <link rel="stylesheet" href="../theme.css" />
     <script type="module" src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="min-h-screen">
+    <form class="color-picker">
+        <fieldset class="justify-center">
+          <legend class="textnav font-bold text-lg">Pick theme color</legend>
+          <label for="pumpkin" class="sr-only">pumpkin</label>
+          <input type="radio" name="theme" id="pumpkin" checked>
+    
+          <label for="sakura" class="sr-only">sakura</label>
+          <input type="radio" name="theme" id="sakura" checked>
+          </fieldset>
+        </form>
     <div>
       <section>
         <div class="flex flex-col justify-center items-center mx-auto">
@@ -101,7 +108,7 @@
               <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
                   <div class="relative h-full ml-0 mr-0 sm:mr-10">
                       <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
-                      <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                      <div class="AUShadow relative h-full p-5 bg-white rounded-lg">
                           <div class="flex items-center -mt-1">
                               <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Selling Product</h3>
                           </div>
@@ -113,7 +120,7 @@
               <div class="w-full sm:w-1/2">
                   <div class="relative h-full ml-0 md:mr-10">
                       <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
-                      <div class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg">
+                      <div class="AUShadow relative h-full p-5 bg-white rounded-lg">
                           <div class="flex items-center -mt-1">
                               <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Popularity Product</h3>
                           </div>
@@ -127,7 +134,7 @@
               <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
                   <div class="relative h-full ml-0 mr-0 sm:mr-10">
                       <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
-                      <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
+                      <div class="AUShadow relative h-full p-5 bg-white rounded-lg">
                           <div class="flex items-center -mt-1">
                               <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Consument Comfiness</h3>
                           </div>
@@ -139,7 +146,7 @@
               <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
                   <div class="relative h-full ml-0 mr-0 sm:mr-10">
                       <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
-                      <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                      <div class="AUShadow relative h-full p-5 bg-white rounded-lg">
                           <div class="flex items-center -mt-1">
                               <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Secure Comfort</h3>
                           </div>
@@ -151,7 +158,7 @@
               <div class="w-full sm:w-1/2">
                   <div class="relative h-full ml-0 md:mr-10">
                       <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
-                      <div class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg">
+                      <div class="AUShadow relative h-full p-5 bg-white rounded-lg">
                           <div class="flex items-center -mt-1">
                               <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Nomon Insights</h3>
                           </div>
@@ -191,7 +198,7 @@
           </a>
           <p>Member</p>
       </div>
-      <p class="mt-2 text-sm text-gray-900">No</p>
+      <p class="mt-2 text-sm text-gray-900">Mau jadi kaya</p>
           </div>
           <!-- Team 3 -->
     <div class="bg-base-100 p-5 rounded-lg text-center text-gray-500">
@@ -225,7 +232,7 @@
           </a>
           <p>Member</p>
       </div>
-      <p class="mt-2 text-sm text-gray-900">mau pulang</p>
+      <p class="mt-2 text-sm text-gray-900">Pada banyak mau</p>
           </div>
        </div>
     </div>
@@ -233,7 +240,7 @@
 </div>
 
 <!-- Footer -->
-<footer class=textfooterpx-3 mt-4 lg:px-9">
+<footer class="textfooter px-3 mt-4 lg:px-9">
     <div class="pt-3 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div class="sm:col-span-2">
           <a href="index.html">
