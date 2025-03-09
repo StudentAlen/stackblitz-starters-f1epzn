@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../theme.css" />
-    <script type="module" src="../like button.js"></script>
+    <script type="module" src="FavoritesButton.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
@@ -101,10 +101,8 @@
         <h2 class="sr-only">Wasian Taco de Carnitas</h2>
         <p class="text-3xl tracking-tight text-gray-900">$309.99
           <div class="item-favorites-containers">
-            <div class="item-favorites item-favorites-selected">
-              <span class="item-favorites-button material-icons-outlined">star</span>
-              <span class="item-favorites-count">0</span>
-            </div>
+              <button id="taco" class="item-favorites-button material-icons-outlined">star</button>
+              <span id="tacocounter"  class="item-favorites-count">0</span>
           </div>
         </p>
         <!-- Reviews -->
