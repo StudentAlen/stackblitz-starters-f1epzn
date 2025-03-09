@@ -13,7 +13,7 @@ body {
     
     .AUShadow {
     box-shadow: 4px 4px var(--clr-border-aboutus);
-    border: 3px solid;
+    border: 2px solid;
     border-color: var(--clr-border-aboutus);
     }
     
@@ -44,21 +44,33 @@ body {
     background-color: var(--clr-nav);
     box-shadow: 3px 4px var(--clr-shadownav);
     }
+
+    .text {
+    color: var(--clr-textproduct);
+    }
     
     .textnav {
     color:var(--clr-textnav) 
     }
     
+    .textfootermain {
+     color: var(--clr-textfooter-main);
+    }
+
     .textfooter {
     color: var(--clr-textfooter);
     text-decoration: none;
     }
     
     .textfooter:hover {
-    color: #7d33f5;
+    color: var(--clr-textfooter-hover);
     text-decoration: underline;
     }
     
+    .button {
+    background-color: var(--clr-button-product);
+    }
+
     .grad{
     background: rgb(195,44,15);
     background: var(--clr-grad);
@@ -71,10 +83,14 @@ body {
     }
     
     .blogbutton {
-        background: rgb(196,2,51);
-        background: var(--clr-blogbutton);
+    background: rgb(196,2,51);
+    background: var(--clr-blogbutton);
     }
     
+    .textblog {
+    color: var(--clr-text-blog);
+    }
+
     .articlefooter {
         background-color: var(--clr-articlefooter);
         box-shadow:3px 2px var(--clr-shadow-artfooter);
@@ -119,7 +135,7 @@ body {
     
     :root:has(#pumpkin:checked) {
         --clr-body-bg: #eabe8e;
-        --clr-text: #7e1f0e;
+        --clr-text: #ffffff;
         --clr-footer: #f19743;
         --clr-shadow-footer: #d48a41;
         --clr-main-text: linear-gradient(90deg, rgb(221, 88, 10) 45%, rgb(243, 124, 26)70%) ;
@@ -128,11 +144,15 @@ body {
         --clr-nav: #e96a13;
         --clr-shadownav:  #f88335;
         --clr-textnav: #7c120a;
-        --clr-textfooter: #fdc6a6;
+        --clr-textfooter-main: rgb(143, 39, 8);
+        --clr-textproduct: #ee8244;
+        --clr-button-product: rgb(253, 178, 149);
+        --clr-textfooter-hover: rgb(241, 133, 106);
         --clr-grad: linear-gradient(90deg, rgba(195,44,15,1) 11%, rgba(233,73,5,1) 57%, rgba(248,132,13,1) 100%);
         --clr-gradbutton: linear-gradient(90deg, rgba(154,2,2,1) 14%, rgba(212,4,4,1) 76%);
         --clr-shadow-gradbutton: rgb(131, 7, 7);
         --clr-blogbutton: linear-gradient(90deg, rgb(255, 102, 0) 35%, rgba(247, 152, 29) 100%);
+        --clr-text-blog: #e06953;
         --clr-articlefooter: rgb(240, 92, 23);
         --clr-shadow-artfooter: rgb(177, 60, 5);
         --clr-articlebutton:  rgb(250, 21, 21);
@@ -143,22 +163,26 @@ body {
     :root:has(#sakura:checked) {
         --clr-body-bg: rgb(252, 194, 194);
         --clr-text: #ffffff;
-        --clr-footer: rgb(255, 109, 131);
-        --clr-shadow-footer: rgb(235, 87, 122);
-        --clr-main-text: linear-gradient(90deg, rgb(243, 52, 52) 45%, rgb(255, 107, 151)70%) ;
-        --clr-main-gradtext: linear-gradient(180deg, rgb(253, 71, 71) 45%, rgb(240, 16, 16)70%);
-        --clr-grad-text: linear-gradient(180deg, rgb(218, 57, 57), rgb(212, 37, 37));
-        --clr-nav: rgb(253, 118, 118);
-        --clr-shadownav:  rgb(247, 145, 145);
+        --clr-footer: #374151;
+        --clr-shadow-footer: #374151;
+        --clr-main-text: linear-gradient(90deg, rgb(216, 31, 31) 56%, rgb(240, 75, 75)90%) ;
+        --clr-main-gradtext: linear-gradient(180deg, rgb(219, 47, 47) 20%, rgb(245, 150, 150)90%);
+        --clr-grad-text: linear-gradient(180deg, rgb(219, 47, 47) 20%, rgb(245, 150, 150)90%);
+        --clr-nav: rgb(249, 130, 130);
+        --clr-shadownav:  rgb(252, 194, 194);
+        --clr-textfooter-main: rgb(247, 170, 170);
         --clr-textnav: #ffff;
-        --clr-textfooter: #fad0dd;
-        --clr-grad: linear-gradient(90deg, rgb(248, 60, 53) 11%, rgb(243, 26, 26) 57%, rgb(248, 40, 13) 100%);
-        --clr-gradbutton: linear-gradient(90deg, rgb(154,2,2,1) 14%, rgba(212,4,4,1) 76%);
-        --clr-shadow-gradbutton: rgb(131, 7, 7);
-        --clr-blogbutton: linear-gradient(90deg, rgb(255, 8, 0) 35%, rgb(247, 29, 29) 100%);
-        --clr-articlefooter: rgb(240, 23, 23);
-        --clr-shadow-artfooter: rgb(177, 5, 5);
-        --clr-articlebutton:  rgb(250, 21, 21);
-        --clr-shadow-artbutton: rgb(216, 7, 7);
-        --clr-border-aboutus: rgb(271, 149, 149);
+        --clr-textproduct: #f8868a;
+        --clr-button-product: #fecaca;
+        --clr-textfooter-hover: rgb(255, 255, 255);
+        --clr-grad: linear-gradient(90deg, rgb(247, 195, 195)11%, rgb(247, 195, 195) 57%, rgb(247, 195, 195) 100%);
+        --clr-gradbutton: linear-gradient(90deg, rgb(249, 188, 188)14%, rgb(247, 195, 195));
+        --clr-shadow-gradbutton: 3px 2px rgb(247, 195, 195);
+        --clr-blogbutton: #ffffff;
+        --clr-text-blog: rgb(247, 170, 170);
+        --clr-articlefooter: rgb(249, 130, 130);
+        --clr-shadow-artfooter: rgb(250, 162, 162);
+        --clr-articlebutton:  rgb(249, 130, 130);
+        --clr-shadow-artbutton:rgb(250, 162, 162);
+        --clr-border-aboutus: #fca5a5;
     }
