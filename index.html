@@ -4,6 +4,7 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
     <script type="module" src="email.js"></script>
     <script type="module" src="logout.js"></script>
     <script type="module" src="theme.js"></script>
@@ -15,13 +16,14 @@
 
   <body>
     <form class="color-picker">
-    <fieldset class="justify-center">
-      <legend class="font-bold text-lg">Pick theme color</legend>
-      <label for="pumpkin" class="sr-only">pumpkin</label>
-      <input type="radio" name="theme" id="pumpkin" checked>
-
-      <label for="sakura" class="sr-only">sakura</label>
-      <input type="radio" name="theme" id="sakura" checked>
+      <fieldset class="justify-center">
+        <legend class="font-bold text-lg">Pick theme color</legend>
+        
+        <label for="pumpkin" class="sr-only">pumpkin</label>
+        <input type="radio" name="theme" id="pumpkin" checked>
+        
+        <label for="sakura" class="sr-only">sakura</label>
+        <input type="radio" name="theme" id="sakura">
       </fieldset>
     </form>
     <button class="nav shadow-md rounded-2xl fixed right-4 bottom-6 z-40" 
